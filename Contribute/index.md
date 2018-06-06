@@ -1,0 +1,72 @@
+---
+title: Microsoft Docs -sisällöntuottajan oppaan yleiskatsaus
+description: Oppaassa kerrotaan, miten voit tuottaa sisältöä Microsoftin dokumentaatiosivustoon docs.microsoft.com.
+author: bryanla
+ms.author: bryanla
+manager: mbaldwin
+ms.date: 04/17/2018
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: 1cda40c890e5b30e6e1e10f3bcee0278f8004653
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469436"
+---
+# <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs -sisällöntuottajan oppaan yleiskatsaus
+
+Tervetuloa [docs.microsoft.com](https://docs.microsoft.com) (Docs) -sisällöntuottajan oppaaseen!
+
+Suurin osa tuottamastamme sisällöstä on avointa ja saatavilla GitHub-palvelussa. Yhä useammat työryhmät ovat ottaneet tämän mallin käyttöön. Pull-pyyntöjä voi tehdä myös artikkeleissa, jotka eivät ole täysin avoimen lähdekoodin periaatteen mukaisia. Tämä tehostaa ja parantaa tuotesuunnittelijoiden, sisältötyöryhmien ja asiakkaiden välistä viestintää. Avoin työskentely tuo monia hyötyjä:
+
+- Avoimet säilöt suunnittelevat avoimesti ja saavat paremmin palautetta tarvittavista asiakirjoista.
+- Avoimet säilöt tarkistavat avoimesti ja voivat julkaista tärkeimmän ohjesisällön heti ensimmäisestä versiosta.
+- Avoimet säilöt päivittävät avoimesti ja voivat jatkuvasti parantaa sisältöä.
+
+Sivuston [docs.microsoft.com](https://docs.microsoft.com) käyttöliittymä on integroitu suoraan [GitHub](https://github.com)-työkulkuihin, mikä helpottaa työskentelyä entisestään. Aloita [muokkaamalla tarkasteltavaa asiakirjaa](#quick-edits-to-existing-documents). Tai auta [tarkistamalla uusia aiheita](#review-open-prs) tai [ilmoita laatuongelmista](#create-quality-issues).
+
+> [!IMPORTANT]
+> Kaikki docs.microsoft.comiin julkaisevat säilöt noudattavat joko [Microsoft Open Source -toimintasääntöjä](https://opensource.microsoft.com/codeofconduct/) tai [.NET Foundation -toimintasääntöjä](https://dotnetfoundation.org/code-of-conduct). Lisätietoja on ohjeaiheessa [Toimintasääntöjen usein kysytyt kysymykset](https://opensource.microsoft.com/codeofconduct/faq/). Tai ota yhteyttä [ opencode@microsoft.com ](mailto:opencode@microsoft.com) tai [ conduct@dotnetfoundation.org ](mailto:conduct@dotnetfoundation.org) kaikkien kysymysten tai kommenttien osalta.<br>
+>
+> Pienet korjaukset ja selvennykset dokumentaatioon ja julkisten säilöjen koodiesimerkit ovat [docs.microsoft.comin käyttöehtojen](https://docs.microsoft.com/legal/termsofuse) alaisia. Uudet tai merkittävät muutokset luovat kommentin pull-pyyntöön, joka pyytää sinua lähettämään osallistujien lisenssisopimuksen (CLA) verkossa, mikäli et ole Microsoftin työntekijä. Verkkolomake on täytettävä ennen kuin pull-pyyntö voidaan tarkastaa ja hyväksyä.
+
+## <a name="quick-edits-to-existing-documents"></a>Nopeat muutokset olemassa oleviin asiakirjoihin
+
+Nopeat muutokset tehostavat ja nopeuttavat raportointiprosessia ja pienten korjausten tekemistä asiakirjoissa. Kirjoittajat ovat vain ihmisiä, joten julkaistut asiakirjat voivat sisältää pieniä kielioppi- tai oikeinkirjoitusvirheitä. Voit raportoida virheistä ilmoittamalla ongelmasta, mutta nopeampi tapa on luoda pull-pyyntö (PR) ongelman korjaamiseksi. Lähes jokaisessa artikkelissa on alla olevan kuvan mukainen muokkauspainike. Napsauttamalla **Muokkaa**-painiketta siirryt lähdetiedostoon GitHubissa.
+
+![Muokkaa-linkin sijainti](./media/index/edit-article.png)
+
+Muokkaa artikkelia napsauttamalla alla olevan kuvan mukaista kynäkuvaketta.
+
+> [!NOTE]
+> Jos kynäkuvake näkyy harmaana, sinun on kirjauduttava GitHub-tiliisi tai luotava uusi tili. Tee muutokset suoraan verkkoeditorissa. Voit tarkistaa muotoilun **Esikatsele muutoksia** -välilehdellä.
+
+![Kynäkuvakkeen sijainti](./media/index/editicon.png)
+
+Kun olet tehnyt tarvittavat muutokset, siirry sivun loppuun. Anna pull-pyynnölle otsikko ja kuvaus ja valitse sitten **Ehdota tiedoston muutosta** kuten kuvassa alla:
+
+![muutoksen ehdottaminen](./media/index/submit-pull-request.png)
+
+Se oli siinä! Sisällön työryhmä tarkastaa ja yhdistää pull-pyyntösi. Jos olet tehnyt isompia muutoksia tekstiin, voit saada niistä palautetta.
+
+GitHubin editointikäyttöliittymä vastaa käyttäjän säilön oikeuksia. Kuvat yllä ovat esimerkkejä osallistujien näkymästä, joilla ei ole kohdesäilön kirjoitusoikeuksia. GitHub luo automaattisesti haarauman kohdesäilöstä tiliisi. Jos sinulla on kohdesäilön kirjoitusoikeudet, GitHub luo siihen automaattisesti uuden haaran. Haaran nimi on muodossa **\<GitHubId\>-patch-n**, jossa on GitHub-tunnisteesi sekä haaran numeerinen tunnus.
+
+Pull-pyyntöjä käytetään kaikissa muutoksissa riippumatta siitä, onko osallistujalla kirjoitusoikeuksia. Haara `master` on suojattu useimmissa säilöissä, jolloin päivitykset on lähetettävä pull-pyynnön muodossa.
+
+Suoraan selaimessa kannattaa tehdä ainoastaan pienempiä muutoksia. Jos teet suuria lisäyksiä tai käytät edistyneitä Git-ominaisuuksia (kuten haaranhallintaa tai edistynyttä ristiriitojen ratkaisumenetelmää), sinun on [suoritettava fork-toiminto säilössä ja työskenneltävä paikallisesti](how-to-write-workflows-major.md).
+
+## <a name="review-open-prs"></a>Avointen pull-pyyntöjen tarkastaminen
+
+Voit tarkastella uusia aiheita ennen niiden julkaisua hakemalla avoimia pull-pyyntöjä. Tarkastukset noudattavat [GitHub-työnkulun](https://guides.github.com/introduction/flow/) prosessia. Julkisissa säilöissä voit tarkastella ehdotettuja päivityksiä ja uusia artikkeleita. Tarkasta ja jätä tarvittaessa kommentteja. Tarkastele mitä tahansa asiakirjasäilöämme ja tutustu sinua kiinnostaviin avoimiin pull-pyyntöihin. Yhteisön palaute ehdotetuista päivityksistä auttaa koko yhteisöä.
+
+## <a name="create-quality-issues"></a>Laatuongelmista ilmoittaminen
+
+Työstämme jatkuvasti asiakirjojamme. Ongelmista ilmoittaminen auttaa meitä keskittymään yhteisön kannalta tärkeimpiin ongelmiin. Mitä enemmän tietoja voit antaa, sitä helpommin voimme korjata ongelman. Kerro mitä tietoja hait. Kerro meille tarkat hakuehdot. Jos et pääse alkuun, kerro meille miten haluaisit aloittaa vieraaseen tekniikkaan tutustumisen.
+
+Ongelmista ilmoittaminen synnyttää keskustelua tarvittavista toimista. Sisällön työryhmä voi vastata ongelmiin ideoilla lisäyksistä ja kysyä yhteisön mielipiteitä. Luodessamme luonnosta voimme pyytää sinua [tarkastamaan Pull-pyynnön](#review-open-prs).
+
+## <a name="get-more-involved"></a>Yhteisön osallistaminen
+
+Muut aiheet auttavat Microsoft Docs -sisällön tuottamiseen osallistuvia. Niissä käydään läpi GitHub-säilöissä työskentely, Markdown-työkalut ja Microsoft Docs -ympäristössä käytetyt laajennukset.

@@ -1,0 +1,7 @@
+- name: Docs
+  href: /
+  homepage: /
+  items:
+    - name: Osallistujan opas
+      href: /contribute/
+      homepage: /contribute/

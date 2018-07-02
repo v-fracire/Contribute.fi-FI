@@ -1,19 +1,13 @@
 ---
 title: Docs-tyyliopas – Pika-aloitus
 description: Tämä artikkeli on lyhyt tyyliopas, joka sisältää vain olennaiset aiheet docs.microsoft.comin käytön aloittamiseen liittyen.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 07/25/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469390"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239599"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs-tyylin ja -sävyn pikaopas
 
@@ -56,5 +50,6 @@ Tekniset artikkelimme käännetään useille kielille, ja joitakin tekstejä on 
 ## <a name="localized-documentation"></a>Lokalisoidut ohjeet
 
 - Jos kirjoitat lokalisoituja ohjeita, muista [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx).
-- Lokalisointiohjeet, eri kielten tyyli ja käyttö teknisissä julkaisuissa sekä eri markkina-alueiden tietomuodot löytyvät kunkin kielen [tyylioppaasta](https://www.microsoft.com/Language/StyleGuides.aspx).
-- Microsoftin lokalisoituja termejä voit hakea [tuotekohtaisista hyväksytyistä termeistä](https://www.microsoft.com/Language/Search.aspx). Vaihtoehtoisesti voit ladata haluamasi kielen [Microsoft-termikokoelman](https://www.microsoft.com/Language/Terminology.aspx).
+- Lokalisointiohjeet, eri kielten tyyli ja käyttö teknisissä julkaisuissa sekä eri markkina-alueiden tietomuodot löytyvät kunkin kielen [tyylioppaasta](https://www.microsoft.com/Language/StyleGuides).
+- Microsoftin lokalisoituja termejä voit hakea [tuotekohtaisista hyväksytyistä termeistä](https://www.microsoft.com/Language/Default.aspx). Vaihtoehtoisesti voit ladata haluamasi kielen [Microsoft-termikokoelman](https://www.microsoft.com/Language/Terminology.aspx).
+- Lisäohjeita on Microsoftin tyylioppaan [lokalisointiosassa](https://docs.microsoft.com/style-guide/global-communications/).

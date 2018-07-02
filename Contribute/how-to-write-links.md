@@ -1,19 +1,13 @@
 ---
 title: Linkkien käyttäminen ohjeissa
 description: Tämä artikkeli opastaa linkkien luomiseen osoitteessa docs.microsoft.com olevaan sisältöön.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469528"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239722"
 ---
 # <a name="using-links-in-documentation"></a>Linkkien käyttäminen ohjeissa
 Tässä artikkelissa kuvataan hyperlinkkien luominen osoitteessa docs.microsoft.com isännöidyistä sivuista. Linkit on helppo lisätä merkintöihin erilaisilla keinoilla. Linkeillä käyttäjä voidaan ohjata samalla sivulla olevaan sisältöön, viereisiin sivuihin tai ulkoisiin sivustoihin ja URL-osoitteisiin.
@@ -63,7 +57,10 @@ Käytä seuraavaa syntaksia, kun haluat luoda linkin teknisestä Docs-artikkelis
   `[link text](../directory/article-name.md)`
 
 - Artikkeli, joka sisältää samaan (samassa säilössä tai muualla sijaitsevaan) ohjesarjaan viittaavia linkkejä: `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> Missään edellisistä esimerkeistä ei ole käytetty merkkejä `~/` osana linkkiä. Jos linkität säilön juuressa olevaan polkuun, aloita merkillä `/`. Merkkien `~/` sisällyttäminen saa aikaan virheellisiä linkkejä siirryttäessä lähdesäilöjen välillä GitHubissa. Kun polku aloitetaan merkillä `/`, se määrittyy oikein.
+
 ## <a name="links-to-anchors"></a>Ankkureihin viittaavat linkit
 
 Sinun ei tarvitse luoda ankkureita. Ne luodaan automaattisesti H2-alaotsikoista julkaisun yhteydessä. Sinun on ainoastaan luotava linkit H2-osioihin.

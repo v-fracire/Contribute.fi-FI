@@ -2,12 +2,12 @@
 title: Linkkien käyttäminen ohjeissa
 description: Tämä artikkeli opastaa linkkien luomiseen osoitteessa docs.microsoft.com olevaan sisältöön.
 ms.date: 06/29/2017
-ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: dad0460cfb36594c17cef1b079c5fc14191f56f7
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239722"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251483"
 ---
 # <a name="using-links-in-documentation"></a>Linkkien käyttäminen ohjeissa
 Tässä artikkelissa kuvataan hyperlinkkien luominen osoitteessa docs.microsoft.com isännöidyistä sivuista. Linkit on helppo lisätä merkintöihin erilaisilla keinoilla. Linkeillä käyttäjä voidaan ohjata samalla sivulla olevaan sisältöön, viereisiin sivuihin tai ulkoisiin sivustoihin ja URL-osoitteisiin.
@@ -148,12 +148,12 @@ URL-osoitteen rakenne:
 
 &lt;Moniker-name&gt; -osa on valinnainen. Jos se jätetään pois, sinut ohjataan sisällön uusimpaan versioon. &lt;Service-name&gt; -osa on yksi seuraavissa perus-URL:issä näytetyistä esimerkeistä:
 
-- Azure PowerShell (AzureRM) -sisältö: https://docs.microsoft.com/powershell/azure/
-- Azure PowerShell (ASM) -sisältö: https://docs.microsoft.com/powershell/azure/_servicemanagement_
-- Azure Active Directory (AzureAD) PowerShell -sisältö: https://docs.microsoft.com/powershell/azure/_active-directory_
-- Azure Service Fabric PowerShell: https://docs.microsoft.com/powershell/azure/_service-fabric_
-- Azure Information Protection PowerShell: https://docs.microsoft.com/powershell/azure/_aip_
-- Azure Elastic DB Jobs PowerShell: https://docs.microsoft.com/powershell/azure/_elasticdbjobs_
+- Azure PowerShell (AzureRM) -sisältö: [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
+- Azure PowerShell (ASM) -sisältö: [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)
+- Azure Active Directory (AzureAD) PowerShell -sisältö: [https://docs.microsoft.com/powershell/azure/_active-directory_](https://docs.microsoft.com/powershell/azure/active-directory)
+- Azure Service Fabric PowerShell: [https://docs.microsoft.com/powershell/azure/_service-fabric_](https://docs.microsoft.com/powershell/azure/service-fabric)
+- Azure Information Protection PowerShell: [https://docs.microsoft.com/powershell/azure/_aip_](https://docs.microsoft.com/powershell/azure/aip)
+- Azure Elastic DB Jobs PowerShell: [https://docs.microsoft.com/powershell/azure/_elasticdbjobs_](https://docs.microsoft.com/powershell/azure/elasticdbjobs)
 
 Kun käytät näitä URL-osoitteita, sinut ohjataan sisällön uusimpaan versioon. Näin sinun ei tarvitse määrittää monikerin versiota. Asiasisältöön viittaavia linkkejä ei tarvitse päivittää, kun sen versio muuttuu.
 

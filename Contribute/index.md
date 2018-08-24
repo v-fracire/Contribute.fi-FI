@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239765"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251470"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs -sisällöntuottajan oppaan yleiskatsaus
 
 Tervetuloa [docs.microsoft.com](https://docs.microsoft.com) (Docs) -sisällöntuottajan oppaaseen!
 
-Suurin osa tuottamastamme sisällöstä on avointa ja saatavilla GitHub-palvelussa. Yhä useammat työryhmät ovat ottaneet tämän mallin käyttöön. Pull-pyyntöjä voi tehdä myös artikkeleissa, jotka eivät ole täysin avoimen lähdekoodin periaatteen mukaisia. Tämä tehostaa ja parantaa tuotesuunnittelijoiden, sisältötyöryhmien ja asiakkaiden välistä viestintää. Avoin työskentely tuo monia hyötyjä:
+Suurin osa tuottamastamme sisällöstä on avointa ja saatavilla GitHub-palvelussa. Yhä useammat Microsoft-tiimit ottavat tämän mallin käyttöön. Pull-pyyntöjä voi tehdä myös artikkeleissa, jotka eivät ole täysin avoimen lähdekoodin periaatteen mukaisia. Tämä tehostaa ja parantaa tuotesuunnittelijoiden, sisältötyöryhmien ja asiakkaiden välistä viestintää. Avoin työskentely tuo monia hyötyjä:
 
 - Avoimet säilöt suunnittelevat avoimesti ja saavat paremmin palautetta tarvittavista asiakirjoista.
 - Avoimet säilöt tarkistavat avoimesti ja voivat julkaista tärkeimmän ohjesisällön heti ensimmäisestä versiosta.

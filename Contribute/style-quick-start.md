@@ -2,22 +2,22 @@
 title: Docs-tyyliopas – Pika-aloitus
 description: Tämä artikkeli on lyhyt tyyliopas, joka sisältää vain olennaiset aiheet docs.microsoft.comin käytön aloittamiseen liittyen.
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239599"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243019"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs-tyylin ja -sävyn pikaopas
 
-Pikaoppaan läpikäynti ei vie kauan, mutta siinä on selkeästi selitetty Docs-tyylin keskeisimmät käsitteet, joita voit tarvita kirjoittaessasi artikkeleita docs.microsoft.comiin. Nämä ohjeet koskevat sekä kirjoitettaessa uusia artikkeleita että päivitettäessä olemassa olevia.
+Tämä pika-aloitus on lyhyt opas teknisen sisällön kirjoittamiseen julkaisua varten docs.microsoft.comissa. Nämä ohjeet koskevat sekä kirjoitettaessa uusia artikkeleita että päivitettäessä olemassa olevia.
 
-Ota huomioon ainakin seuraavat asiat:
+Parhaat käytännöt:
 
 - Tarkista artikkelin kieliasu, esimerkiksi kopioimalla ja liittämällä teksti Wordiin.
 - Käytä vapaata ja helppoa kieltä – kuten puhuessasi kahden kesken toisen henkilön kanssa.
-- Käytä yksinkertaisia lauseita. Niitä on helpompi ymmärtää, ja ne kääntyvät selkeämmin muille kielille sekä ihmis- että konekääntäjien toimesta.
+- Käytä yksinkertaisia lauseita. Helposti luettavien lauseiden ansiosta lukija voi nopeasti soveltaa jakamiasi ohjeita.
 
 ## <a name="use-the-microsoft-voice-principles"></a>Noudata Microsoft-sävyn periaatteita
 

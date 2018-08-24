@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238916"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251419"
 ---
 # <a name="install-content-authoring-tools"></a>Sisällön tuottamisen työkalujen asentaminen
 
 Tässä artikkelissa kuvataan Git-asiakastyökalujen ja Visual Studio Coden asennusvaiheet vuorovaikutteisesti.
 > [!div class="checklist"]
-> * [Git for Windowsin](https://git-scm.com/download/win) asentaminen
+> * [Gitin](https://git-scm.com/) asentaminen
 > * [Visual Studio Coden](https://code.visualstudio.com/) asentaminen
 > * [Docs Authoring Packin](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) asentaminen
 
@@ -25,9 +25,13 @@ Tässä artikkelissa kuvataan Git-asiakastyökalujen ja Visual Studio Coden asen
 >
 > Merkittäviä osallistujia kehotetaan käymään läpi nämä vaiheet, joiden avulla voi käyttää [merkittävien/pitkäkestoisten muutosten työnkulkua](how-to-write-workflows-major.md). Vaikka sinulla olisi kirjoitusoikeudet pääsäilössä, *on suositeltavaa (ja tässä ohjeessa oletetaan), että teet säilöön haarauman ja kloonaat sen*, jotta sinulla on luku- ja kirjoitusoikeudet ehdottamiesi muutosten tallentamiseen haaraumaasi.
 
-## <a name="install-git-client-tools-on-windows"></a>Git-asiakastyökalujen asentaminen Windowsiin
+## <a name="install-git-client-tools"></a>Git-asiakastyökalujen asentaminen 
 
- Asenna uusin versio [Software Freedom Conservancyn Git-asiakastyökaluista](https://git-scm.com/download/). Asennukseen kuuluu Git-versiontarkistusjärjestelmä ja Git Bash, joka on paikallisen Git-säilön käsittelyyn käytettävä komentorivisovellus.
+ Asenna uusin versio [Software Freedom Conservancyn Git-asiakastyökaluista](https://git-scm.com/download/) alustaasi. 
+
+* [Git for Windows](https://git-scm.com/download/win). Tähän asennukseen kuuluu Git-versiontarkistusjärjestelmä ja Git Bash, joka on paikallisen Git-säilön käsittelyyn käytettävä komentorivisovellus.
+* Git for Mac toimitetaan osana Xcode Command Line -työkaluja. Suorita vain `git` komentoriviltä. Sinua kehotetaan asentamaan komentorivityökalut tarvittaessa. Voit myös ladata [Git for Macin](https://git-scm.com/download/mac) Software Freedom Conservancysta.
+* [Git for Linux ja Unix](https://git-scm.com/download/linux)
 
 Jos haluat käyttää graafista käyttöliittymää (GUI) komentorivikäyttöliittymän (CLI) sijaan, katso suosittuja vaihtoehtoja [Software Freedom Conservancyn käytettävissä olevien GUI-asiakkaiden sivulta](https://git-scm.com/downloads/guis), [GitHubin GitHub-työpöydältä](https://desktop.github.com/) tai [Visual Studio Codesta](https://www.visualstudio.com/products/code-vs.aspx).
 

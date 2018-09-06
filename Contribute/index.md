@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251470"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308889"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs -sisällöntuottajan oppaan yleiskatsaus
 
@@ -31,7 +31,7 @@ Sivuston [docs.microsoft.com](https://docs.microsoft.com) käyttöliittymä on i
 
 ## <a name="quick-edits-to-existing-documents"></a>Nopeat muutokset olemassa oleviin asiakirjoihin
 
-Nopeat muutokset tehostavat ja nopeuttavat raportointiprosessia ja pienten korjausten tekemistä asiakirjoissa. Kirjoittajat ovat vain ihmisiä, joten julkaistut asiakirjat voivat sisältää pieniä kielioppi- tai oikeinkirjoitusvirheitä. Voit raportoida virheistä ilmoittamalla ongelmasta, mutta nopeampi tapa on luoda pull-pyyntö (PR) ongelman korjaamiseksi. Lähes jokaisessa artikkelissa on alla olevan kuvan mukainen muokkauspainike. Napsauttamalla **Muokkaa**-painiketta siirryt lähdetiedostoon GitHubissa.
+Nopeat muutokset tehostavat ja nopeuttavat raportointiprosessia ja pienten korjausten tekemistä asiakirjoissa. Kirjoittajat ovat vain ihmisiä, joten julkaistut asiakirjat voivat sisältää pieniä kielioppi- tai oikeinkirjoitusvirheitä. Voit raportoida virheistä ilmoittamalla ongelmasta, mutta nopeampi tapa on luoda pull-pyyntö (PR) ongelman korjaamiseksi. Lähes jokaisessa artikkelissa on alla olevan kuvan mukainen muokkauspainike. Napsauttamalla **Muokkaa**-painiketta (tai vastaavaa lokalisoitua painiketta) siirryt lähdetiedostoon GitHubissa.
 
 ![Muokkaa-linkin sijainti](./media/index/edit-article.png)
 
@@ -46,6 +46,12 @@ Kun olet tehnyt tarvittavat muutokset, siirry sivun loppuun. Anna pull-pyynnöll
 
 ![muutoksen ehdottaminen](./media/index/submit-pull-request.png)
 
+Kun olet nyt ehdottanut muutosta, sinun on pyydettävä säilön omistajia noutamaan muutoksesi omaan säilöönsä. Tämä tapahtuu käyttämällä niin sanottua pull-pyyntöä. Kun valitsit **Ehdota tiedoston muutosta** yllä olevassa kuvassa, siirryit uudelle sivulle, joka näyttää seuraavalta kuvalta:
+
+![luo pull-pyyntö](media/index/create-pull-request.png)
+
+Valitse **Luo pull-pyyntö**, anna pull-pyynnölle nimi ja halutessasi kuvaus ja valitse **Luo pull-pyyntö** uudelleen.
+
 Se oli siinä! Sisällön työryhmä tarkastaa ja yhdistää pull-pyyntösi. Jos olet tehnyt isompia muutoksia tekstiin, voit saada niistä palautetta.
 
 GitHubin editointikäyttöliittymä vastaa käyttäjän säilön oikeuksia. Kuvat yllä ovat esimerkkejä osallistujien näkymästä, joilla ei ole kohdesäilön kirjoitusoikeuksia. GitHub luo automaattisesti haarauman kohdesäilöstä tiliisi. Jos sinulla on kohdesäilön kirjoitusoikeudet, GitHub luo siihen automaattisesti uuden haaran. Haaran nimi on muodossa **\<GitHubId\>-patch-n**, jossa on GitHub-tunnisteesi sekä haaran numeerinen tunnus.
@@ -53,6 +59,12 @@ GitHubin editointikäyttöliittymä vastaa käyttäjän säilön oikeuksia. Kuva
 Pull-pyyntöjä käytetään kaikissa muutoksissa riippumatta siitä, onko osallistujalla kirjoitusoikeuksia. Haara `master` on suojattu useimmissa säilöissä, jolloin päivitykset on lähetettävä pull-pyynnön muodossa.
 
 Suoraan selaimessa kannattaa tehdä ainoastaan pienempiä muutoksia. Jos teet suuria lisäyksiä tai käytät edistyneitä Git-ominaisuuksia (kuten haaranhallintaa tai edistynyttä ristiriitojen ratkaisumenetelmää), sinun on [suoritettava fork-toiminto säilössä ja työskenneltävä paikallisesti](how-to-write-workflows-major.md).
+
+> [!NOTE]
+> Jos ominaisuus on käytössä, voit muokata artikkelia **millä tahansa kielellä**. Muokkauksesta riippuen tapahtuu seuraavaa:
+> 1. jokainen hyväksytty lingvistinen muutos auttaa myös parantamaan konekäännösohjelmaamme
+> 2. mikä tahansa artikkelin sisältöä merkittävästi muuttava muokkaus käsitellään sisäisesti, jotta muutos voidaan lisätä myös samaan englanninkieliseen artikkeliin. Näin se hyväksytyksi tullessaan lokalisoidaan kaikille kielille.
+> Ehdottamasi parannukset eivät siis vaikuta positiivisesti artikkeleihin vain omalla kielelläsi vaan myös kaikilla tuetuilla kielillä.
 
 ## <a name="review-open-prs"></a>Avointen pull-pyyntöjen tarkastaminen
 

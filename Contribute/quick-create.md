@@ -6,14 +6,14 @@ author: syntaxc4
 manager: erifkin
 ms.date: 07/24/2018
 ms.author: cfowler
-zone_pivot_groups: keyvault-languages, keyvault-platforms
+zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8b758274203748bb6e04c03dec5de38fb77947b4
-ms.sourcegitcommit: b0105f322f91bb4dbde47f6da35b3c12271d5b03
+ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43239565"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308820"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Pikaopas: Salaisen koodin asettaminen ja noutaminen Azure Key Vaultista
 
@@ -29,24 +29,17 @@ Tämän pikaoppaan avulla opit tallentamaan salaisen koodin Key Vaultiin ja nout
 
 Varmista ennen jatkamista, että tunnet [peruskäsitteet](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts).
 
->[!NOTE]
-Alla oleva opetusohjelma edustaa parasta käytäntöä. Syy siihen selviää tutustumalla tiettyihin käsitteisiin. Key Vault on keskussäilö salaisten koodien ohjelmalliseen tallentamiseen. Jotta niin voi tehdä, sovellusten tai käyttäjien on ensin suoritettava Key Vaultin todentaminen eli esitettävä salainen koodi. Lisäksi tietoturvan parhaat käytännöt edellyttävät, että tätä ensimmäistä salaista koodia kierrätetään jaksoittain. Azuressa toimiville [hallitun palvelun käyttäjätietosovelluksille](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) annetaan kuitenkin käyttäjätiedot, joita Azure hallitsee automaattisesti. Tämä auttaa ratkaisemaan **salaisen koodin esittelyongelman**, jossa käyttäjät tai sovellukset voivat noudattaa parhaita käytäntöjä huolehtimatta ensimmäisen salaisen koodin kierrättämisestä.
+> [!NOTE]
+> Alla oleva opetusohjelma edustaa parasta käytäntöä. Syy siihen selviää tutustumalla tiettyihin käsitteisiin. Key Vault on keskussäilö salaisten koodien ohjelmalliseen tallentamiseen. Jotta niin voi tehdä, sovellusten tai käyttäjien on ensin suoritettava Key Vaultin todentaminen eli esitettävä salainen koodi. Lisäksi tietoturvan parhaat käytännöt edellyttävät, että tätä ensimmäistä salaista koodia kierrätetään jaksoittain. Azuressa toimiville [hallitun palvelun käyttäjätietosovelluksille](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) annetaan kuitenkin käyttäjätiedot, joita Azure hallitsee automaattisesti. Tämä auttaa ratkaisemaan **salaisen koodin esittelyongelman**, jossa käyttäjät tai sovellukset voivat noudattaa parhaita käytäntöjä huolehtimatta ensimmäisen salaisen koodin kierrättämisestä.
 
 ## <a name="prerequisites"></a>Edellytykset
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end
-
-::: zone pivot="dotnet, windows"
+* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
 * [Visual Studio 2017 -versio 15.7.3 tai uudempi](https://www.microsoft.com/net/download/windows) seuraavilla kuormituksilla:
   * ASP.NET ja verkkokehitys
   * Käyttöympäristöjen välinen .NET Core -kehitys
 * [.NET Core 2.1 SDK tai uudempi](https://www.microsoft.com/net/download/windows) :::zone-end
-
-::: zone pivot="dotnet, mac"
-* Lisätietoja: [Visual Studio for Macin uudet ominaisuudet](https://visualstudio.microsoft.com/vs/mac/).
-:::zone-end
-
 * Git ([lataa](https://git-scm.com/downloads)).
 * Azure-tilaus. Jos sinulla ei ole Azure-tilausta, luo [maksuton tili](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) ennen aloittamista.
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) -versio 2.0.4 tai uudempi. Tämä on saatavilla Windowsille, Macille ja Linuxille.
@@ -168,10 +161,10 @@ Alla on muutamia suoritettavia vaiheita.
     ```bash
     git remote add azure <url>
     ```
+    
 ::: zone-end
 
 ::: zone pivot="dotnet"
-
 ## <a name="open-and-edit-the-solution"></a>Ratkaisun avaaminen ja muokkaaminen
 
 Muokkaa Program.cs-tiedostoa siten, että se voi suorittaa mallin erityisellä Key Vault -nimelläsi:
@@ -197,7 +190,6 @@ Kun julkaiset tämän sovelluksen Azureen, näet sen toiminnassa verkkosovelluks
 5. Valitse **Luo**.
 
 >[!VIDEO https://sec.ch9.ms/ch9/e93d/a6ac417f-2e63-4125-a37a-8f34bf0fe93d/KeyVault_high.mp4]
-
 ::: zone-end
 
 ## <a name="enable-managed-service-identities"></a>Hallitun palvelun käyttäjätietojen käyttöönotto
@@ -242,7 +234,9 @@ git push azure master
 ```
 
 Kun tämän jälkeen siirryt osoitteeseen https://<app_name>.azurewebsites.net, näet näet salaisen koodin arvon.
-Varmista, että korvasit nimen <YourKeyVaultName> oman Vaultisi nimellä ::: zone-end
+Varmista, että korvasit nimen <YourKeyVaultName> oman Vaultisi nimellä
+
+::: zone-end
 
 ::: zone pivot="dotnet" Kun nyt suoritat sovelluksen, sinun tulisi nähdä noudettu salaisen koodin arvo.
 ::: zone-end

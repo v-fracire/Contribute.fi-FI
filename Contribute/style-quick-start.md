@@ -2,12 +2,12 @@
 title: Docs-tyyliopas – Pika-aloitus
 description: Tämä artikkeli on lyhyt tyyliopas, joka sisältää vain olennaiset aiheet docs.microsoft.comin käytön aloittamiseen liittyen.
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243019"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084395"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs-tyylin ja -sävyn pikaopas
 
@@ -15,7 +15,7 @@ Tämä pika-aloitus on lyhyt opas teknisen sisällön kirjoittamiseen julkaisua 
 
 Parhaat käytännöt:
 
-- Tarkista artikkelin kieliasu, esimerkiksi kopioimalla ja liittämällä teksti Wordiin.
+- Tarkista artikkelin kieliasu, esimerkiksi kopioimalla ja liittämällä teksti Microsoft Wordiin.
 - Käytä vapaata ja helppoa kieltä – kuten puhuessasi kahden kesken toisen henkilön kanssa.
 - Käytä yksinkertaisia lauseita. Helposti luettavien lauseiden ansiosta lukija voi nopeasti soveltaa jakamiasi ohjeita.
 
@@ -45,11 +45,11 @@ Tekniset artikkelimme käännetään useille kielille, ja joitakin tekstejä on 
 - Koodikatkelmia sisältävissä vaiheissa voit laittaa lisätietoja vaiheesta suoraan koodiin kommentteina. Tämä vähentää tekstin määrää, jota käyttäjien on luettava. Tärkeimmät tiedot kopioituvat koodiprojektiin, jossa ne muistuttavat käyttäjiä myöhemmin siitä, mitä koodi tekee.
 - Aloita otsikot isolla alkukirjaimella.
 - Kirjoita ”sisäänkirjautuminen”; ei ”sisäänkirjaus”.
-- Voit lisätä sanan ”seuraavasti” tai ”alla” virkkeeseen, joka edeltää luetteloa tai koodikatkelmaa.
+- Lisää ohjeita on kohdassa [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/welcome).
 
 ## <a name="localized-documentation"></a>Lokalisoidut ohjeet
 
 - Jos kirjoitat lokalisoituja ohjeita, muista [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx).
 - Lokalisointiohjeet, eri kielten tyyli ja käyttö teknisissä julkaisuissa sekä eri markkina-alueiden tietomuodot löytyvät kunkin kielen [tyylioppaasta](https://www.microsoft.com/Language/StyleGuides).
 - Microsoftin lokalisoituja termejä voit hakea [tuotekohtaisista hyväksytyistä termeistä](https://www.microsoft.com/Language/Default.aspx). Vaihtoehtoisesti voit ladata haluamasi kielen [Microsoft-termikokoelman](https://www.microsoft.com/Language/Terminology.aspx).
-- Lisäohjeita on Microsoftin tyylioppaan [lokalisointiosassa](https://docs.microsoft.com/style-guide/global-communications/).
+- Lisätietoja lokalisoinnista on [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/global-communications) -oppaan kohdassa "Global communications".

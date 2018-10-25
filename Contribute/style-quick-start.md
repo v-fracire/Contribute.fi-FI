@@ -2,12 +2,12 @@
 title: Docs-tyyliopas – Pika-aloitus
 description: Tämä artikkeli on lyhyt tyyliopas, joka sisältää vain olennaiset aiheet docs.microsoft.comin käytön aloittamiseen liittyen.
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805578"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs-tyylin ja -sävyn pikaopas
 
@@ -51,5 +51,5 @@ Tekniset artikkelimme käännetään useille kielille, ja joitakin tekstejä on 
 
 - Jos kirjoitat lokalisoituja ohjeita, muista [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx).
 - Lokalisointiohjeet, eri kielten tyyli ja käyttö teknisissä julkaisuissa sekä eri markkina-alueiden tietomuodot löytyvät kunkin kielen [tyylioppaasta](https://www.microsoft.com/Language/StyleGuides).
-- Microsoftin lokalisoituja termejä voit hakea [tuotekohtaisista hyväksytyistä termeistä](https://www.microsoft.com/Language/Default.aspx). Vaihtoehtoisesti voit ladata haluamasi kielen [Microsoft-termikokoelman](https://www.microsoft.com/Language/Terminology.aspx).
+- Microsoftin lokalisoituja termejä voit hakea [tuotekohtaisista hyväksytyistä termeistä](https://www.microsoft.com/Language/Default.aspx). Vaihtoehtoisesti voit ladata haluamasi kielen [Microsoft-termikokoelman](https://www.microsoft.com/language/Terminology).
 - Lisätietoja lokalisoinnista on [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/global-communications) -oppaan kohdassa "Global communications".

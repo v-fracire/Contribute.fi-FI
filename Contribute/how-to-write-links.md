@@ -2,12 +2,12 @@
 title: Linkkien käyttäminen ohjeissa
 description: Tämä artikkeli opastaa linkkien luomiseen osoitteessa docs.microsoft.com olevaan sisältöön.
 ms.date: 06/29/2017
-ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
-ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
+ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805765"
 ---
 # <a name="using-links-in-documentation"></a>Linkkien käyttäminen ohjeissa
 Tässä artikkelissa kuvataan hyperlinkkien luominen osoitteessa docs.microsoft.com isännöidyistä sivuista. Linkit on helppo lisätä merkintöihin erilaisilla keinoilla. Linkeillä käyttäjä voidaan ohjata samalla sivulla olevaan sisältöön, viereisiin sivuihin tai ulkoisiin sivustoihin ja URL-osoitteisiin.
@@ -158,7 +158,7 @@ URL-osoitteen rakenne:
 Kun käytät näitä URL-osoitteita, sinut ohjataan sisällön uusimpaan versioon. Näin sinun ei tarvitse määrittää monikerin versiota. Asiasisältöön viittaavia linkkejä ei tarvitse päivittää, kun sen versio muuttuu.
 
 Jotta luomasi linkki on oikein, hae linkitettävä sivu selaimella ja kopioi sen URL-osoite.
-Poista sitten ´ ”https://docs.microsoft.com” ´ ja viittaus kielialueeseen.
+Poista sitten `https://docs.microsoft.com` ja viittaus kielialueeseen.
 
 Kun linkität sisällysluettelosta, käytä täydellistä URL-osoitetta ilman viittausta kielialueeseen.
 

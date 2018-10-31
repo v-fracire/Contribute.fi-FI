@@ -2,18 +2,18 @@
 title: Miten käyttää Markdownina Docsien kirjoittamiseen
 description: Tässä artikkelissa on perustiedot ja viiteohjeet docs.microsoft.com -artikkelien kirjoittamiseen käytettävään Markdown-kieleen.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238962"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805721"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Miten käyttää Markdownia Docsien kirjoittamiseen
 
-Docs.microsoft.com artikkelit kirjoitetaan kevyellä [Markdown](https://daringfireball.net/projects/markdown/)-nimisellä merkintäkielellä, joka on sekä helppolukuinen että helppo oppia. Tämän vuoksi siitä on nopeasti tullut alan standardi.
+[Docs.microsoft.com](http://docs.microsoft.com)-artikkelit kirjoitetaan kevyellä [Markdown](https://daringfireball.net/projects/markdown/)-nimisellä merkintäkielellä, joka on sekä helppolukuinen että helppo oppia. Tämän vuoksi siitä on nopeasti tullut alan standardi.
 
-Koska Docs-sisältö säilytetään GitHubissa, se voi käyttää [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) -nimistä Markdownin yläjoukkoa, joka sisältää lisätoimintoja yleisiä muotoilutarpeita varten. Lisäksi Open Publishing Services (OPS) käyttää Markdig Markdown Parseria. Markdig on laajasti yhteensopiva GitHub Flavored Markdownin (GFM) kanssa, ja se lisää Docsiin liittyvää toiminnallisuutta.
+Koska Docs-sisältö säilytetään GitHubissa, se voi käyttää [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) -nimistä Markdownin yläjoukkoa, joka sisältää lisätoimintoja yleisiä muotoilutarpeita varten. Lisäksi Open Publishing Services (OPS) käyttää Markdig Markdown Parseria. Markdig on laajasti yhteensopiva GFM:n kanssa, ja se lisää Docsiin liittyvää toiminnallisuutta.
 
 * Markdig on nopea, tehokas, CommonMark-yhteensopiva, laajennettava Markdown-suoritin .NETiä varten.
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Koska Docs-sisältö säilytetään GitHubissa, se voi käyttää [GitHub Flavor
 Voit luoda otsikon käyttämällä #-merkkiä seuraavasti:
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>Tekstin lihavointi ja kursivointi
@@ -38,19 +38,19 @@ Voit luoda otsikon käyttämällä #-merkkiä seuraavasti:
 Voit **lihavoida** tekstiä ympäröimällä sen kahdella tähtimerkillä:
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 Voit *kursivoida* tekstiä ympäröimällä sen yhdellä tähtimerkillä:
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 Voit ***lihavoida ja kursivoida***  tekstiä ympäröimällä sen kolmella tähtimerkillä:
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>Luettelot
@@ -107,16 +107,16 @@ Voit luoda luettelon toisen luettelon sisälle sisentämällä aliluettelon koht
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 hahmonnetaan seuraavasti:
 
 1. Ensimmäinen ohje
-    1. Alaohje
-    2. Alaohje
+   1. Alaohje
+   2. Alaohje
 2. Toinen ohje
 
 ### <a name="tables"></a>Taulukot
@@ -145,12 +145,12 @@ hahmonnetaan seuraavasti:
 
 Jos haluat lisätietoja taulukoiden luomisesta, katso:
 
-- Markdigin [taulukon rivitysominaisuus](#table-wrapping), joka voi auttaa leveiden taulukoiden muotoilussa
-- GitHubissa [tietojen järjestäminen taulukoiden avulla](https://help.github.com/articles/organizing-information-with-tables/)
-- [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) -verkkosovellus
-- [Adam Pritchardin Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
-- [Michel Fortinin Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table)
-- [HTML-taulukoiden muuntaminen Markdowniksi](https://jmalarcon.github.io/markdowntables/)
+- Markdigin [taulukon rivitysominaisuus](#table-wrapping), joka voi auttaa leveiden taulukoiden muotoilussa.
+- GitHubin [tietojen järjestäminen taulukoiden avulla](https://help.github.com/articles/organizing-information-with-tables/).
+- [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables) -verkkosovellus.
+- [Adam Pritchardin Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).
+- [Michel Fortinin Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table).
+- [HTML-taulukoiden muuntaminen Markdowniksi](https://jmalarcon.github.io/markdowntables/).
 
 ### <a name="links"></a>Linkit
 
@@ -161,7 +161,7 @@ Tekstin sisäisen linkin Markdown-syntaksi koostuu `[link text]`-osasta, joka on
 Jos haluat lisätietoja linkittämisestä, katso:
 
 - [Markdown- syntaksioppaasta](https://daringfireball.net/projects/markdown/syntax#link) tietoja Markdownin peruslinkitystuesta.
-- Oppaan [Linkit](how-to-write-links.md)-osasta tietoja Markdigin sisältämästä lisäsyntaksista linkittämistä varten.
+- Tämän oppaan [Linkit](how-to-write-links.md)-osasta tietoja Markdigin sisältämästä lisäsyntaksista linkittämistä varten.
 
 ### <a name="code-snippets"></a>Koodikatkelmat
 
@@ -212,6 +212,7 @@ Näille kielille on kutsumanimituki, ja useimmille on käytössä kielen korostu
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ Markdig tukee koodin edistynyttä sisällytystä artikkeleihin koodikatkelmalaaj
 Alaviivoja sisältävää Alt-tekstiä ei hahmonneta oikein. Esimerkiksi tämän käyttämisen sijaan:
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 Muotoile alaviivat näin:
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>Heittomerkit ja lainausmerkit
 
-Jos kopioit tekstiä Wordista Markdown-editoriin, teksti saattaa sisältää ns. älykkäitä (kaarevia) heittomerkkejä tai lainausmerkkejä. Nämä täytyy koodata tai muuttaa tavallisiksi heittomerkeiksi tai lainausmerkeiksi. Muuten tekstiin päätyy julkaisuvaiheessa virheellisiä merkkejä, esim. Itâ€™s
+Jos kopioit tekstiä Wordista Markdown-editoriin, teksti saattaa sisältää ns. älykkäitä (kaarevia) heittomerkkejä tai lainausmerkkejä. Nämä täytyy koodata tai muuttaa tavallisiksi heittomerkeiksi tai lainausmerkeiksi.
+Muuten tekstiin päätyy julkaisuvaiheessa virheellisiä merkkejä, esim. Itâ€™s
 
 Seuraavassa on näiden välimerkkien älykkäiden versioiden koodaukset:
 
@@ -358,14 +360,15 @@ Seuraavassa on näiden välimerkkien älykkäiden versioiden koodaukset:
 
 ### <a name="angle-brackets"></a>Kulmasulkeet
 
-Jos käytät kulmasulkeita tekstissä (ei siis koodissa) osoittamaan esimerkiksi paikkamerkkiä, kulmasulkeet on koodattava käsin. Muuten Markdown tulkitsee ne HTML-tunnisteiksi.
+Kulmasulkeita käytetään tavallisesti osoittamaan paikkamerkkiä. Kun teet näin tekstin sisällä (ei koodissa), kulmasulkeet on koodattava. Muuten Markdown tulkitsee ne HTML-tunnisteiksi.
 
 Koodaa `<script name>` esimerkiksi näin: `&lt;script name&gt;`
 
-## <a name="see-also"></a>Katso myös
+## <a name="see-also"></a>Katso myös:
 
 ### <a name="markdown-resources"></a>Markdown-resursseja
 
 - [Johdatus Markdowniin](https://daringfireball.net/projects/markdown/syntax)
 - [Docs Markdown -pikaopas](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [GitHubin Markdown-perusteet](https://help.github.com/articles/markdown-basics/)
+- [Markdown-opas](https://www.markdownguide.org/)

@@ -8,12 +8,12 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805735"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Pikaopas: Salaisen koodin asettaminen ja noutaminen Azure Key Vaultista
 
@@ -35,11 +35,14 @@ Varmista ennen jatkamista, että tunnet [peruskäsitteet](https://docs.microsoft
 ## <a name="prerequisites"></a>Edellytykset
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node JS](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * [Visual Studio 2017 -versio 15.7.3 tai uudempi](https://www.microsoft.com/net/download/windows) seuraavilla kuormituksilla:
   * ASP.NET ja verkkokehitys
   * Käyttöympäristöjen välinen .NET Core -kehitys
-* [.NET Core 2.1 SDK tai uudempi](https://www.microsoft.com/net/download/windows) :::zone-end
+* [.NET Core 2.1 SDK tai uudempi](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git ([lataa](https://git-scm.com/downloads)).
 * Azure-tilaus. Jos sinulla ei ole Azure-tilausta, luo [maksuton tili](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) ennen aloittamista.
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) -versio 2.0.4 tai uudempi. Tämä on saatavilla Windowsille, Macille ja Linuxille.
@@ -110,7 +113,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>Riippuvuuksien asentaminen
 
-Tässä osiossa asennetaan riippuvuudet. Suorita tämä komento: cd key-vault-node-quickstart npm install
+Tässä osiossa asennetaan riippuvuudet. Suorita seuraavat komennot:
+
+    cd key-vault-node-quickstart
+    npm install
 
 Tässä projektissa käytettiin kahta solmumoduulia:
 
@@ -119,14 +125,14 @@ Tässä projektissa käytettiin kahta solmumoduulia:
 
 ## <a name="publish-the-web-application-to-azure"></a>Verkkosovelluksen julkaiseminen Azureen
 
-Alla on muutamia suoritettavia vaiheita.
+Jotta sovelluksen voi julkaista Azuressa, on suoritettava alla olevat vaiheet.
 
 * Ensimmäinen vaihe on luoda [Azure-sovelluspalvelun](https://azure.microsoft.com/services/app-service/) sopimus. Sopimukseen voi tallentaa useita verkkosovelluksia.
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* Seuraavaksi luodaan verkkosovellus. Korvaa seuraavassa esimerkissä <app_name> globaalisti yksilöllisellä sovellusnimellä (kelvollisia merkkejä ovat a–z, 0–9 ja -). Suorituspalvelun arvoksi on asetettu NODE|6.9. Näet kaikki tuetut suorituspalvelut komennolla az webapp list-runtimes
+* Seuraavaksi luodaan verkkosovellus. Korvaa seuraavassa esimerkissä <app_name> globaalisti yksilöllisellä sovellusnimellä (kelvollisia merkkejä ovat a–z, 0–9 ja -). Suorituspalvelun arvoksi on asetettu NODE|6.9. Jos haluat nähdä kaikki tuetut suorituspalvelut, suorita `az webapp list-runtimes`
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -238,7 +244,8 @@ Varmista, että korvasit nimen <YourKeyVaultName> oman Vaultisi nimellä
 
 ::: zone-end
 
-::: zone pivot="dotnet" Kun nyt suoritat sovelluksen, sinun tulisi nähdä noudettu salaisen koodin arvo.
+::: zone pivot="dotnet"
+Kun nyt suoritat sovelluksen, sinun pitäisi nähdä noudettu salaisen koodin arvo.
 ::: zone-end
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
@@ -247,10 +254,12 @@ Varmista, että korvasit nimen <YourKeyVaultName> oman Vaultisi nimellä
 * [Azure Key Vaultin aloitussivu](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vaultin dokumentaatio](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK For Node](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [Azuren REST-ohjelmointirajapinnan viittaus](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azuren REST-ohjelmointirajapinnan viiteopas](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Azure Key Vaultin aloitussivu](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vaultin dokumentaatio](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK For .NET](https://github.com/Azure/azure-sdk-for-net)
-* [Azuren REST-ohjelmointirajapinnan viittaus](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azuren REST-ohjelmointirajapinnan viiteopas](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

@@ -1,20 +1,19 @@
 ---
-title: Docs Authoring Pack VS Codelle
-description: Tässä artikkelissa kerrotaan VS Code -laajennuspaketista, joka helpottaa docs.microsoft.com -sisällön luomista Markdown-syntaksilla.
+title: Docs Authoring Pack Visual Studio Codelle
+description: Tässä artikkelissa kerrotaan Visual Studio Code -laajennuspaketista, joka helpottaa docs.microsoft.com -sisällön luomista Markdown-syntaksilla.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308912"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805650"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack VS Codelle
 
-Docs Authoring Pack on kokoelma VS Code -laajennuksia, jotka helpottavat docs.microsoft.com -sisällön luomista Markdown-syntaksilla. Paketti on [saatavilla VS Code Marketplacesta](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack), ja se sisältää seuraavat laajennukset:
+Docs Authoring Pack on kokoelma Visual Studio Code -laajennuksia, jotka helpottavat docs.microsoft.com -sisällön luomista Markdown-syntaksilla. Paketti on [saatavilla VS Code Marketplacesta](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack), ja se sisältää seuraavat laajennukset:
 
 - [markdownlint:](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) David Ansonin suunnittelema suosittu Markdown-lintteri varmistaa, että Markdown-syntaksi noudattaa parhaita käytäntöjä.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): täysin offline-tilassa käytettävä oikeinkirjoituksen tarkistus Street Side Softwarelta.
@@ -103,7 +102,7 @@ Templates-laajennus tukee kolmea dynaamista metatietokenttää: author, ms.autho
 |----------|---------------|
 |author    |Oma GitHub-tunnuksesi, jos se on määritetty VS Code -asetustiedostossasi.|
 |ms.author |Oma Microsoft-aliaksesi, jos se on määritetty VS Code -asetustiedostossasi. Jos et ole  Microsoftin työntekijä, jätä tämä määrittämättä.|
-|ms.date   |Nykyinen päivämäärä Docs-tuetussa muodossa: KK/PP/VVVV. Huomaa, että päivämäärää ei päivitetä automaattisesti, jos päivität tiedoston myöhemmin. Se on päivitettävä manuaalisesti kuvastamaan artikkelin päivitysaikaa.|
+|ms.date   |Nykyinen päivämäärä Docs-tuetussa muodossa: KK/PP/VVVV. Huomaa, että päivämäärä ei päivity automaattisesti, jos päivität tiedoston myöhemmin. Sinun on päivitettävä ms.date-arvo manuaalisesti osoittamaan docs.microsoft.com-sivuston viimeisintä julkaisupäivää.|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>author-arvon (GitHub-tunnus) ja/tai ms.author-arvon (Microsoft-alias) asettaminen
 

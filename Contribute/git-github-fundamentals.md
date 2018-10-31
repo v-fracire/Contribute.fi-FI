@@ -2,12 +2,12 @@
 title: Git- ja GitHub-perusteet asiakirjojen käsittelyä varten
 description: Tässä artikkelissa esitellään yleisluontoisesti Git, GitHub-säilö, sen sisällön järjestämistapa ja docs.microsoft.com-sivustossa käytetyt nimeämiskäytännöt.
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239798"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805696"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git- ja GitHub-perusteet asiakirjoja varten
 
@@ -30,8 +30,8 @@ Git käyttää myös kerrostettua rakennetta projektin sisällön tallennukseen 
 
 Osallistujat päivittävät ja käsittelevät säilöjä vuorovaikutuksessa Git-palvelun kanssa sekä paikallisella tasolla että GitHub-tasolla seuraavilla tavoilla:
 
-- Paikallisesti hyödyntämällä erilaisia työkaluja, kuten Git Bash -konsolia, joka tukee Git-komentoja paikallisten säilöjen hallinnassa ja kommunikoinnissa GitHub-säilöjen kanssa
-- Käyttämällä [www.github.com](https://www.github.com)-sivustoa, johon on integroitu Git-palvelu pääsäilöön takaisin virtaavien työpanosten yhteensovitusta varten
+- Paikallisesti hyödyntämällä erilaisia työkaluja, kuten Git Bash -konsolia, joka tukee Git-komentoja paikallisten säilöjen hallinnassa ja kommunikoinnissa GitHub-säilöjen kanssa.
+- Käyttämällä [www.github.com](https://www.github.com)-sivustoa, johon on integroitu Git-palvelu takaisin pääsäilöön virtaavien työpanosten yhteensovitusta varten.
 
 ## <a name="github"></a>GitHub
 
@@ -46,7 +46,7 @@ Kaikki työnkulut alkavat ja päättyvät GitHubin tasolla, jolla sijaitsee kaik
 
 Kuten edellä mainittiin, projektin oletus- eli päähaara toimii projektin sisällön nykyisenä versiona. Päähaaran – ja siitä luotujen haarojen – sisältö on löyhästi suhteessa artikkelien järjestelyyn vastaavilla asiakirjojen sivuilla. Alihakemistoja käytetään samankaltaisen sisällön (kuten palvelujen), mediasisällön (kuten kuvatiedostojen) ja ns. sisällytettyjen tiedostojen (jotka mahdollistavat sisällön uudelleenkäytön) erotteluun.
 
-Löydät `articles`-päähakemiston tavallisesti säilön juuresta. Artikkelihakemisto sisältää joukon alihakemistoja. Alihakemistojen artikkelit on muotoiltu Markdown-tiedostoiksi, joilla on tiedostonimen *.md*-tunniste. Jotkin useita palveluja tukevat säilöt käyttävät yleistä `/articles`-alihakemistoa. Esimerkiksi [ https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs)-säilö on tällainen. Muut säilöt saattavat käyttää palvelukohtaista nimeä. Tällainen on esimerkiksi [ https://github.com/microsoft/IntuneDocs ](https://github.com/microsoft/IntuneDocs)-säilö, joka käyttää `/IntuneDocs`-nimeä.
+Löydät `articles`-päähakemiston tavallisesti säilön juuresta. Artikkelihakemisto sisältää joukon alihakemistoja. Alihakemistojen artikkelit on muotoiltu Markdown-tiedostoiksi, joilla on tiedostonimen *.md*-tunniste. Jotkin useita palveluja tukevat säilöt käyttävät yleistä `/articles`-alihakemistoa. Esimerkiksi [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs)-säilö on tällainen. Muut säilöt saattavat käyttää palvelukohtaista nimeä. Tällainen on esimerkiksi [IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs)-säilö, joka käyttää `/IntuneDocs`-alihakemistoa.
 
 Tämän hakemiston juuresta löydät yleisiä artikkeleita, jotka liittyvät koko palveluun tai tuotteeseen. Löydät tavallisesti myös toisen alihakemistojen sarjan, joka vastaa toimintoja ja palveluja tai yleisiä skenaarioita. Esimerkiksi Azuren näennäiskoneen artikkelit ovat `/virtual-machines`-alihakemistossa ja Intunen ”ymmärtämisen ja tutkimisen” artikkelit ovat `/understand-explore`-alihakemistossa.
 

@@ -3,14 +3,13 @@ title: Git-säilön paikallinen määritys
 description: Tässä artikkelissa on ohjeet paikallisen Git-säilön luomiseen ja osallistumiseen dokumentaatioon, mukaan lukien haarautumis- ja kloonausprosessit.
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805673"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Git-säilön paikallinen määritys dokumentaatiota varten
 
@@ -30,7 +29,7 @@ Voit aloittaa osallistumisen seuraavien kertaalleen suoritettavien määritystoi
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Microsoftin dokumentaatiosivustolle osallistumiseksi voit luoda ja muokata Markdown-tiedostoja paikallisesti kloonaamalla vastaavan dokumentaatiosäilön. Microsoft edellyttää, että haaroitat asianmukaisen säilön omalle Github-tilillesi siten, että sinulla on siihen luku- ja kirjoitusoikeudet ehdotettujen muutostesi tallentamiseksi. Voit sitten pull-pyyntöjen avulla sulauttaa muutokset keskitettyyn jaettuun säilöön, johon on vain luku -oikeudet.
+Microsoftin dokumentaatiosivustolle osallistumiseksi voit luoda ja muokata Markdown-tiedostoja paikallisesti kloonaamalla vastaavan dokumentaatiosäilön. Microsoft edellyttää, että haaroitat asianmukaisen säilön omalle GitHub-tilillesi siten, että sinulla on siihen luku- ja kirjoitusoikeudet ehdotettujen muutostesi tallentamiseksi. Voit sitten pull-pyyntöjen avulla sulauttaa muutokset keskitettyyn jaettuun säilöön, johon on vain luku -oikeudet.
 
 ![GitHub-kolmio](./media/git-and-github-initial-setup.png)
 
@@ -60,7 +59,7 @@ Jos et ole aiemmin käyttänyt GitHubia, katso seuraava video, jossa on haarautu
 ## <a name="fork-the-repository"></a>Haaroita säilö
 Voit asianmukaisen säilön avulla luoda säilön haarauman omalle GitHub-tilillesi GitHub-verkkosivuston avulla.
 
-Henkilökohtaista haaraumaa vaaditaan, koska kaikki pääasialliset dokumentaatiosäilöt tarjoavat vain luku -käyttöoikeuden eikä sisältöön voi tehdä muutoksia suoraan säiliöissä. Jos haluat tehdä muutoksia, sinun on lähetettävä [pull-pyyntö](git-github-fundamentals.md#pull-requests) haaraumasta pääasialliseen säilöön. Tämän prosessin helpottamiseksi tarvitset ensin säilön oman kopion, johon sinulla on kirjoitusoikeus. GitHub-*haarauma* on tätä tarkoitusta varten.
+Henkilökohtaista haaraumaa edellytetään, koska kaikki pääasialliset dokumentaatiosäilöt tarjoavat vain luku -käyttöoikeuden. Jos haluat tehdä muutoksia, sinun on lähetettävä [pull-pyyntö](git-github-fundamentals.md#pull-requests) haaraumasta pääasialliseen säilöön. Tämän prosessin helpottamiseksi tarvitset ensin säilön oman kopion, johon sinulla on kirjoitusoikeus. GitHub-*haarauma* on tätä tarkoitusta varten.
 
 1. Siirry pääasiallisen säilön GitHub-sivulle ja napsauta **Haarauma**-painiketta yläoikealla.
 
@@ -84,7 +83,7 @@ Säilytä säilön paikallinen kopio luomalla paikallinen kansio. Jotkin säilö
 
    Voit määrittää nykyisen hakemiston kirjoittamalla `pwd` $-komentoriville. 
 
-3. Vaihda hakemisto (cd) kansioon, jonka loit säilön paikallista isännöintiä varten. Huomaa, että Git Bash käyttää kansiopoluille vinoviivojen Linux-konventiota kenoviivojen sijasta.
+3. Vaihda hakemisto (cd) kansioon, jonka loit säilön paikallista isännöintiä varten. Huomaa, että Git Bash käyttää kansiopoluissa vinoviivojen Linux-konventiota kenoviivojen sijasta.
 
    Esimerkiksi `cd /c/docs/ ` tai `cd ~/Documents/docs/`.
 

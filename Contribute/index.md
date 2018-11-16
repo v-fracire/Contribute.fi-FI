@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805788"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609357"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs -sisällöntuottajan oppaan yleiskatsaus
 
@@ -37,10 +37,12 @@ Nopeat muutokset tehostavat ja nopeuttavat raportointiprosessia ja pienten korja
 
 Muokkaa artikkelia napsauttamalla alla olevan kuvan mukaista kynäkuvaketta.
 
-> [!NOTE]
-> Jos kynäkuvake näkyy harmaana, sinun on kirjauduttava GitHub-tiliisi tai luotava uusi tili. Tee muutokset suoraan verkkoeditorissa. Voit tarkistaa muotoilun **Esikatsele muutoksia** -välilehdellä.
-
 ![Kynäkuvakkeen sijainti](./media/index/editicon.png)
+
+> [!NOTE]
+> Jos kynäkuvake näkyy harmaana, sinun on kirjauduttava GitHub-tiliisi tai luotava uusi tili.
+
+Tee muutokset suoraan verkkoeditorissa. Voit tarkistaa muotoilun **Esikatsele muutoksia** -välilehdellä.
 
 Kun olet tehnyt tarvittavat muutokset, siirry sivun loppuun. Anna pull-pyynnölle otsikko ja kuvaus ja valitse sitten **Ehdota tiedoston muutosta** kuten kuvassa alla:
 

@@ -11,6 +11,11 @@
 ## [Tyylin ja sävyn pikaopas](style-quick-start.md)
 ## [Linkit](how-to-write-links.md)
 ## [Docs Authoring Pack](how-to-write-docs-auth-pack.md)
+# Ohjejoukkokohtaiset ohjeistukset
+## [.NET-ohjeet](dotnet-contribute.md)
+### [.NET-ohjeisiin osallistuminen](dotnet-contribute-process.md)
+### [.NET-ohjeistusten tyyliseikat](dotnet-style-guide.md)
+### [Kieli- ja sävyopas](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content

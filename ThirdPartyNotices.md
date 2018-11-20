@@ -5,6 +5,6 @@ Microsoft, Windows, Microsoft Azure ja/tai muut Microsoft-tuotteet ja -palvelut,
 Tämän projektin käyttöoikeudet eivät anna sinulle oikeutta käyttää Microsoftin nimiä, logoja tai tavaramerkkejä.
 Microsoftin tavaramerkkejä koskevat yleiset ohjeet ovat osoitteessa http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Tietosuojatiedot ovat osoitteessa https://privacy.microsoft.com/en-us/.
+Tietosuojatiedot ovat osoitteessa https://privacy.microsoft.com/.
 
 Microsoft ja mahdolliset muut osallistujat pidättävät itsellään kaikki muut oikeudet, niin implisiittiset, estoppel-periaatteen mukaiset kuin muutkin, perustuivatpa ne sitten omiin tekijänoikeuksiin, patentteihin tai tavaramerkkeihin.

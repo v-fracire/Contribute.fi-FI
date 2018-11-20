@@ -1,13 +1,15 @@
 ---
 title: Linkkien käyttäminen ohjeissa
 description: Tämä artikkeli opastaa linkkien luomiseen osoitteessa docs.microsoft.com olevaan sisältöön.
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805765"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609426"
 ---
 # <a name="using-links-in-documentation"></a>Linkkien käyttäminen ohjeissa
 Tässä artikkelissa kuvataan hyperlinkkien luominen osoitteessa docs.microsoft.com isännöidyistä sivuista. Linkit on helppo lisätä merkintöihin erilaisilla keinoilla. Linkeillä käyttäjä voidaan ohjata samalla sivulla olevaan sisältöön, viereisiin sivuihin tai ulkoisiin sivustoihin ja URL-osoitteisiin.
@@ -22,7 +24,7 @@ Docs.microsoft.com-sivuston taustajärjestelmän käyttää Open Publishing Serv
 Linkin tekstin tulee olla sävyltään ystävällinen. Sen on siis koostuttava normaaleista suomenkielistä sanoista tai linkitettävän sivun otsikosta.
 
 > [!IMPORTANT]
-> Älä käytä ilmaisua ”napsauta tästä”. Se heikentää hakukoneiden tuloksia ja kuvailee sisältöä huonosti.
+> Älä käytä ilmaisua ”napsauta tästä”. Se heikentää hakukoneoptimoinnin tuloksia ja kuvailee kohdetta huonosti.
 
 **Oikein:**
 
@@ -56,7 +58,7 @@ Käytä seuraavaa syntaksia, kun haluat luoda linkin teknisestä Docs-artikkelis
 
   `[link text](../directory/article-name.md)`
 
-- Artikkeli, joka sisältää samaan (samassa säilössä tai muualla sijaitsevaan) ohjesarjaan viittaavia linkkejä: `[link text](./directory/article-name)`
+- Artikkeli, joka sisältää samaan (samassa säilössä tai muualla sijaitsevaan) ohjesarjaan viittaavia linkkejä:  `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > Missään edellisistä esimerkeistä ei ole käytetty merkkejä `~/` osana linkkiä. Jos linkität säilön juuressa olevaan polkuun, aloita merkillä `/`. Merkkien `~/` sisällyttäminen saa aikaan virheellisiä linkkejä siirryttäessä lähdesäilöjen välillä GitHubissa. Kun polku aloitetaan merkillä `/`, se määrittyy oikein.
@@ -84,17 +86,23 @@ Sinun ei tarvitse luoda ankkureita. Ne luodaan automaattisesti H2-alaotsikoista 
 
 Koska sisällytetyt tiedostot sijaitsevat toisessa hakemistossa, sinun on käytettävä pidempiä suhteellisia polkuja. Käytä seuraavaa muotoa, kun haluat linkittää sisällytetystä tiedostosta:
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>Linkit valitsimissa
 
-Jos sinulla on valitsimia, jotka on upotettu sisällytettyyn tiedostoon (joita mm. Azuren ohjetiimi käyttää) käytä seuraavaa linkkirakennetta:
+Valitsin on siirtymiseen tarkoitettu komponentti, joka tulee ohjeartikkelissa näkyviin avattavana luettelona. Kun lukija valitsee arvon avattavasta luettelosta, selain avaa valitun artikkelin. Yleensä valitsimen luettelossa on linkkejä aiheeseen läheisesti liittyviin artikkeleihin, esimerkiksi samaa aihealuetta mutta eri ohjelmointikieltä käsitteleviin artikkeleihin tai toisiinsa liittyvien artikkeleiden sarjaan. 
 
-    > [AZURE.SELECTOR-LIST (Avattava valikko1 | Avattava valikko2 )]
-    - [(Teksti1 | Esimerkki1)](../articles/folder/article-name1.md)
-    - [(Teksti1 | Esimerkki2)](../articles/folder/article-name2.md)
-    - [(Teksti2 | Esimerkki3)](../articles/folder/article-name3.md)
-    - [(Teksti2 | Esimerkki4)](../articles/folder/article-name4.md) -->
+Jos sinulla on valitsimia, jotka on upotettu sisällytettyyn tiedostoon, käytä seuraavaa linkkirakennetta:
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>Viitetyyliset linkit
 
@@ -102,23 +110,29 @@ Viitetyylisten linkkien avulla voit helpottaa lähdesisällön luettavuutta. Vii
 
 Sidottu teksti:
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 Viitelinkit artikkelin lopussa:
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 Muista sisällyttää kaksoispisteen jälkeen tuleva, linkkiä edeltävä välilyönti. Jos unohdat välilyönnin linkittäessäsi muihin teknisiin artikkeleihin, julkaistun artikkelin linkki ei toimi.
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>Linkit sivuille, jotka eivät kuulu teknisten ohjeiden sarjaan
 
 Jos haluat linkittää toiselle Microsoftin omistamalle sivulle (esim. hinnastosivu, palvelutasosopimuksen sivu tai muu sivu, joka ei sisällä ohjeartikkelia), käytä absoluuttista URL-osoitetta, mutta poista aluetunnus. Tässä tavoitteena on, että linkit toimivat GitHubissa ja hahmonnetulla sivustolla:
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>Linkit kolmansien osapuolten sivustoille
 
 Paras käyttäjäkokemus on sellainen, jossa vältetään ohjaamasta käyttäjä toiselle sivustolle. Kolmansien osapuolen sivustoille linkittämistä ei voi aina välttää, joten perusta tällaisille sivustoille johtavat linkit seuraaviin tietoihin:
@@ -146,7 +160,7 @@ URL-osoitteen rakenne:
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-&lt;Moniker-name&gt; -osa on valinnainen. Jos se jätetään pois, sinut ohjataan sisällön uusimpaan versioon. &lt;Service-name&gt; -osa on yksi seuraavissa perus-URL:issä näytetyistä esimerkeistä:
+Osio `<moniker-name>` on valinnainen. Jos se jätetään pois, sinut ohjataan sisällön uusimpaan versioon. Osa `<service-name>` on yksi seuraavissa perus-URL-osoitteissa näytetyistä esimerkeistä:
 
 - Azure PowerShell (AzureRM) -sisältö: [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Azure PowerShell (ASM) -sisältö: [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)

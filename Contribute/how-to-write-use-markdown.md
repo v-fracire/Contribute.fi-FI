@@ -2,12 +2,12 @@
 title: Miten käyttää Markdownina Docsien kirjoittamiseen
 description: Tässä artikkelissa on perustiedot ja viiteohjeet docs.microsoft.com -artikkelien kirjoittamiseen käytettävään Markdown-kieleen.
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805721"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609518"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Miten käyttää Markdownia Docsien kirjoittamiseen
 
@@ -33,6 +33,14 @@ Voit luoda otsikon käyttämällä #-merkkiä seuraavasti:
 #### This is heading 4
 ```
 
+Otsikoiden luonnissa tulee käyttää atx-tyyliä, eli otsikko tulee merkitä rivin alussa olevilla 1–6 ristikkomerkillä, jotka vastaavat HTML-otsikkotasoja H1–H6. Yllä näet esimerkit tasojen 1–4 otsikoista.
+
+Aiheessa saa olla **vain yksi** ensimmäisen tason otsikko (H1). Se näytetään sivun otsikkona.
+
+Jos otsikko päättyy `#`-merkkiin, otsikon oikea hahmontaminen edellyttää ylimääräisen `#`-merkin lisäämistä otsikon loppuun. Esimerkki: `# Async Programming in F# #`.
+
+Toisen tason otsikoista luodaan sivulle sisällysluettelo, joka näytetään sivun otsikon alla olevassa Artikkelin sisältö -kohdassa.
+
 ### <a name="bold-and-italic-text"></a>Tekstin lihavointi ja kursivointi
 
 Voit **lihavoida** tekstiä ympäröimällä sen kahdella tähtimerkillä:
@@ -52,6 +60,18 @@ Voit ***lihavoida ja kursivoida***  tekstiä ympäröimällä sen kolmella täht
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>Pitkät lainaukset
+
+Pitkät lainaukset luodaan `>`-merkin avulla:
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+Yllä oleva esimerkki hahmonnetaan seuraavasti:
+
+> Kuivuutta oli nyt kestänyt kymmenen miljoonaa vuotta, ja hirmuliskojen valtakausi oli aikoja sitten päättynyt. Täällä päiväntasaajalla, mantereella, joka jonain päivänä tunnettaisiin Afrikkana, oli olemassaolon taistelu saavuttanut uuden raivokkaan huipun. Tässä hedelmättömässä, kuivassa maassa voivat vain pienet, nopeat tai raivoisat menestyä tai edes toivoa säilyvänsä.
 
 ### <a name="lists"></a>Luettelot
 
@@ -93,8 +113,8 @@ Voit muotoilla järjestetyn/asteittaisen luettelon käyttämällä vastaavia num
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 hahmonnetaan seuraavasti:
@@ -108,8 +128,8 @@ Voit luoda luettelon toisen luettelon sisälle sisentämällä aliluettelon koht
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 hahmonnetaan seuraavasti:
@@ -119,7 +139,9 @@ hahmonnetaan seuraavasti:
    2. Alaohje
 2. Toinen ohje
 
-### <a name="tables"></a>Taulukot
+Huomaa, että lukua 1 käytetään jokaisessa kohdassa. Se tekee muutosten tarkistamisesta helpompaa, kun myöhemmissä päivityksessä lisätään tai poistetaan vaiheita.
+
+### <a name="tables"></a>taulukoilla
 
 Taulukot eivät kuulu Markdownin ydinkokonaisuuteen, mutta GFM tukee niitä. Voit luoda taulukoita käyttämällä pystyviivaa (|) ja tavuviivaa (-). Tavuviivat luovat sarakkeen otsikon ja pystyviivat erottavat sarakkeet toisistaan. Lisää tyhjä rivi taulukon eteen, niin se hahmonnetaan oikein.
 
@@ -194,6 +216,8 @@ Näille kielille on kutsumanimituki, ja useimmille on käytössä kielen korostu
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|C# selaimessa|csharp-interactive|
+|Console|console|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Näille kielille on kutsumanimituki, ja useimmille on käytössä kielen korostu
 |VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+Nimi `csharp-interactive` määrittää C#-kielen sekä mahdollisuuden suorittaa esimerkit selaimesta. Nämä katkelmat on käännetty ja suoritettu Docker-säilössä, ja ohjelman suorituksen tulokset näkyvät käyttäjän selainikkunassa.
 
 #### <a name="example-c"></a>Esimerkki: C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __Hahmonnus__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ Voit kiinnittää käyttäjän huomion tiettyyn sisältöön valitsemalla neljä
 
 Huomautuslohkoja tulisi käyttää säästeliäästi, koska ne voivat olla häiritsevä. Vaikka huomautuslohkot tukevat koodilohkoja, kuvia, luetteloja ja linkkejä, pyri pitämään ne yksinkertaisina ja selkeinä.
 
+Esimerkkejä:
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+Nämä hahmontuvat seuraavasti:
+
+> [!NOTE]
+> Tämä on HUOMAUTUS
+
+> [!WARNING]
+> Tämä on VAROITUS
+
+> [!TIP]
+> Tämä on VINKKI
+
+> [!IMPORTANT]
+> Tämä on TÄRKEÄÄ
+
 ### <a name="includes"></a>Sisällytykset
 
 Kun haluat lisätä artikkelitiedostoihin uudelleenkäytettävää tekstiä tai kuvatiedostoja, voit sisällyttää tiedoston käyttämällä viittausta Markdigin tiedostojen sisällytysominaisuuden avulla. Tämä ominaisuus ohjaa OPS:n sisällyttämään tiedoston artikkelitiedostoon artikkelin muodostamisen aikana, jolloin siitä tulee julkaistun artikkelin osa. Sisällön uudelleenkäyttämisen avuksi on kolme erityyppistä sisällytystä:
@@ -317,13 +373,29 @@ Tässä on sisällytyksien vaatimukset ja huomioitavat seikat:
 - Samoin kuin tavallisten artikkelien tapauksessa, älä jaa mediaa sisällytyskansioiden välillä. Käytä jokaiseen sisällytykseen ja artikkeliin erillistä tiedostoa, jolla on yksilöllinen nimi. Tallenna mediatiedosto siihen mediakansioon, joka liittyy sisällytykseen.
 - Älä käytä sisällytystä artikkelin ainoana sisältönä.  Sisällytysten on tarkoitus lisätä sisältöä varsinaiseen artikkeliin.
 
+Esimerkki:
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>Valitsimet
 
 Käytä valitsimia teknisissä artikkeleissa, kun kirjoitat samasta artikkelista useampaa versiota. Valitsimien avulla voit ottaa huomioon eri teknologioista ja käyttöympäristöistä johtuvat erot. Tämä koskee useimmiten kehittäjille suunnattua mobiilikäyttöympäristöä käsittelevää sisältöä. Markdigissä on tällä hetkellä kaksi erityyppistä valitsinta: yksittäinen valitsin ja monivalitsin.
 
 Koska sama valitsin-Markdown sijoitetaan kaikkiin valittuihin artikkeleihin, artikkelin valitsin on suositeltavaa sijoittaa sisällytykseen. Tällöin voit viitata sisällytykseen kaikissa niissä artikkeleissa, jotka käyttävät samaa valitsinta.
 
-### <a name="code-snippets"></a>Koodikatkelmat
+Seuraavassa on esimerkki valitsimesta:
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+Näet aidon esimerkin valitsimista [Azure-ohjeissa](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
+
+### <a name="code-includes"></a>Koodin sisällytys
 
 Markdig tukee koodin edistynyttä sisällytystä artikkeleihin koodikatkelmalaajennuksen avulla. Se käyttää edistynyttä hahmonnusta, joka perustuu erilaisiin GFM-ominaisuuksiin, kuten ohjelmointikielen valintaan ja syntaksin väritykseen, sekä ominaisuuksiin, kuten:
 
@@ -348,8 +420,7 @@ Muotoile alaviivat näin:
 
 ### <a name="apostrophes-and-quotation-marks"></a>Heittomerkit ja lainausmerkit
 
-Jos kopioit tekstiä Wordista Markdown-editoriin, teksti saattaa sisältää ns. älykkäitä (kaarevia) heittomerkkejä tai lainausmerkkejä. Nämä täytyy koodata tai muuttaa tavallisiksi heittomerkeiksi tai lainausmerkeiksi.
-Muuten tekstiin päätyy julkaisuvaiheessa virheellisiä merkkejä, esim. Itâ€™s
+Jos kopioit tekstiä Wordista Markdown-editoriin, teksti saattaa sisältää ns. älykkäitä (kaarevia) heittomerkkejä tai lainausmerkkejä. Nämä täytyy koodata tai muuttaa tavallisiksi heittomerkeiksi tai lainausmerkeiksi. Muuten tekstiin päätyy julkaisuvaiheessa virheellisiä merkkejä, esim. Itâ€™s
 
 Seuraavassa on näiden välimerkkien älykkäiden versioiden koodaukset:
 

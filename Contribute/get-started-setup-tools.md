@@ -5,12 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251419"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609381"
 ---
 # <a name="install-content-authoring-tools"></a>Sisällön tuottamisen työkalujen asentaminen
 
@@ -47,7 +47,7 @@ Markdown on kevyt merkintäkieli, jota on helppo lukea ja helppo oppia. Tämän 
 
 Markdown-tiedostojen tunniste on .md.
 
-Lisätietoja Markdownilla kirjoittamisesta, mukaan lukien Markdownin perusteet ja OPS:n mukautettujen Markdown-laajennusten tukemat ominaisuudet, annetaan myöhemmin [Markdownin käyttö](how-to-write-use-markdown.md) -artikkelissa.
+Lisätietoja Markdown-merkintäkielellä kirjoittamisesta, esimerkiksi Markdownin perusteet ja OPS:n (Open Publishing Services) mukautettujen Markdown-laajennusten tukemat ominaisuudet, annetaan myöhemmin [Markdownin käyttö Docs-sisällön kirjoittamiseen](how-to-write-use-markdown.md)- ja [OPS:n Markdown-ohjeet](markdown-reference.md) -artikkeleissa.
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 

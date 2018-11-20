@@ -2,12 +2,12 @@
 title: GitHub-osallistumistyönkulku merkittäville tai pitkäkestoisille muutoksille
 description: Tässä artikkelissa kerrotaan, miten merkittäviä osallistumistyönkulkuja käytetään hyväksi osallistuttaessa docs.microsoft.comin artikkeleiden tekoon.
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239821"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609387"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-osallistumistyönkulku merkittäville tai pitkäkestoisille muutoksille
 
@@ -31,7 +31,7 @@ Ennen kuin aloitat, käydäänpä ensin läpi muutamia Git- ja GitHub-ehtoja ja 
 | Nimi | Kuvaus |
 |-----------|-------------|
 |haarauma|Käytetään tavallisesti substantiivina, kun puhutaan GitHub-pääsäilön kopiosta. Käytännössä haarautuma on vain säilö muiden joukossa. Se on kuitenkin erityinen siinä mielessä, että GitHub ylläpitää yhteyttä takaisin pääsäilöön. Sitä käytetään joskus verbinä, kuten ”Säilöön täytyy ensin tehdä haarauma”.|
-|etä/etäsäilö|Nimetty yhteys etäsäilöön, kuten ”alkuperä”- ja ”ylätaso”-etäsäilöön. Git viittaa näihin etäsäilöinä, koska niitä käytetään puhuttaessa säilöstä, joka sijaitsee toisella tietokoneella. Tässä työnkulussa etäsäilö on aina GitHub-säilö.|
+|etä/etäsäilö|Nimetty yhteys etäsäilöön, kuten ”alkuperä”- ja ”ylätaso”-etäsäilöön. Gitissä puhutaan edästä/etäsäilöstä, koska sillä viitataan säilöön, joka sijaitsee toisella tietokoneella. Tässä työnkulussa etäsäilö on aina GitHub-säilö.|
 |alkuperä|Sen yhteyden nimi, joka kulkee paikallisen säilösi ja sen säilön välillä, josta se on kloonattu. Tässä työnkulussa alkuperä edustaa yhteyttä haaraumaasi. Sitä käytetään toisinaan nimityksenä itse alkuperäsäilölle, kuten ”Muista siirtää muutokset alkuperään”.|
 |ylätaso|Samoin kuin alkuperäetäsäilö, ylätaso on toisen säilön nimetty yhteys. Tässä työnkulussa ylätaso edustaa yhteyttä paikallisen säilösi ja sen pääsäilön välillä, josta sinun haaraumasi on luotu. Sitä käytetään toisinaan nimityksenä itse ylätason säilölle, kuten ”Muista ottaa muutokset ylätasolta”.|
 

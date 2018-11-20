@@ -4,12 +4,12 @@ description: Tässä artikkelissa on ohjeet paikallisen Git-säilön luomiseen j
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805673"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609495"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Git-säilön paikallinen määritys dokumentaatiota varten
 
@@ -41,7 +41,7 @@ Jos et ole aiemmin käyttänyt GitHubia, katso seuraava video, jossa on haarautu
 
 [docs.microsoft.comin](https://docs.microsoft.com) isännöimä dokumentaatio on useissa eri säilöissä [github.comissa](https://www.github.com).
 
-1. Jos et ole varma käytettävästä säilöstä lue docs.microsoft.comin artikkeli verkkoselaimen avulla. Valitse **Muokkaa**-linkki (kynäkuvake) artikkelin oikeasta yläkulmasta.
+1. Jos et ole varma käytettävästä säilöstä, lue [docs.microsoft.comin](https://docs.microsoft.com) artikkeli verkkoselaimen avulla. Valitse **Muokkaa**-linkki (kynäkuvake) artikkelin oikeasta yläkulmasta.
 
    ![Määritä säilö ja tiedoston sijainti napsauttamalla Muokkaa.](media/index/edit-article.png)
 
@@ -92,7 +92,7 @@ Säilytä säilön paikallinen kopio luomalla paikallinen kansio. Jotkin säilö
 Valmistele **Kloonaa**-komennon suorittaminen Git Bashin avulla viemällä säilön kopio (haarautuma) alaspäin laitteeseen nykyisessä hakemistossa. 
 
 ### <a name="authenticate-by-using-git-credential-manager"></a>Todenna Git-tunnistetietojenhallinnan avulla
-Jos olet asentanut Git for Windowsin uusimman version ja hyväksynyt oletusasennuksen, Git-tunnistetietojenhallinta on oletusarvoisesti käytössä. Git-tunnistetietojenhallinta helpottaa selvästi todennusta, koska sinun ei tarvitse peruuttaa henkilökohtaista käyttöoikeustietuettasi, kun muodostat uudelleen todennettuja yhteyksiä ja etäyhteyksiä GitHubin kanssa.
+Jos olet asentanut Git for Windowsin uusimman version ja hyväksynyt oletusasennuksen, Git-tunnistetietojenhallinta on oletusarvoisesti käytössä. Git-tunnistetietojen hallinta helpottaa selvästi todennusta, koska sinun ei tarvitse peruuttaa henkilökohtaista käyttöoikeustietuettasi, kun muodostat uudelleen todennettuja yhteyksiä ja etäyhteyksiä GitHubin kanssa.
 
 1. Suorita **Kloonaa**-komento antamalla säilön nimi. Kloonaa lataukset (Kloonaa) haaroitettuun säilöön paikallisessa tietokoneessa. 
 

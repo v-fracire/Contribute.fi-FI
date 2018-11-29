@@ -16,6 +16,7 @@
 ### [.NET-ohjeisiin osallistuminen](dotnet-contribute-process.md)
 ### [.NET-ohjeistusten tyyliseikat](dotnet-style-guide.md)
 ### [Kieli- ja sävyopas](dotnet-voice-tone.md)
+# [Lisää resursseja](additional-resources.md)
 
 <!--
 ## Creating new content
@@ -79,4 +80,3 @@
 
      Open question: How to keep this up to date?
    -->
-## [Lisää resursseja](additional-resources.md)

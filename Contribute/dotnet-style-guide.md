@@ -2,12 +2,12 @@
 title: .NET-artikkeleiden malli ja pikaohje
 description: Tässä artikkelissa tarjotaan kätevä malli, jonka avulla voit luoda uusia artikkeleita .NET-ohjesäilöihin
 ms.date: 11/07/2018
-ms.openlocfilehash: 8980f5e39213d8f2edd1d29e66d900f2c3d04bbc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609735"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299656"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Metatieto- ja Markdown-malli .NET-ohjeita varten
 
@@ -79,9 +79,11 @@ Kirjoita isolla alkukirjaimella vain otsikon ensimmäinen sana ja erisnimet. Ots
 - Käytämme yleensä suhteellisia linkkejä ja kehotamme välttämään `~/`:n käyttöä linkeissä, koska suhteelliset linkit selvitetään GitHubissa lähteessä. `~/`-merkkiä käytetään kuitenkin polun ilmaisemiseen linkitettäessä riippuvaisessa säilössä olevaan tiedostoon. Riippuvaisen säilön tiedostot ovat GitHubissa eri sijainnissa, ja siksi suhteellisia linkkejä ei kirjoitustavasta riippumatta voida selvittää oikein.
 - C#-kielimääritys ja Visual Basic -kielimääritys sisällytetään .NET-ohjeistuksiin lisäämällä lähde kielisäilöistä. Markdown-lähteitä hallinnoidaan [csharplang](https://github.com/dotnet/csharplang)- ja [vblang](https://github.com/dotnet/vblang)-säilöissä.
 
-Määrityksen linkkien on osoitettava niihin lähdehakemistoihin, joihin kyseiset määritykset kuuluvat. C#:n osalta kyseessä on **~/_csharplang/spec** ja VB:n **~/_vblang/spec**.
+Määrityksen linkkien on osoitettava niihin lähdehakemistoihin, joihin kyseiset määritykset kuuluvat. C#:n osalta kyseessä on **~/_csharplang/spec** ja VB:n **~/_vblang/spec**, kuten seuraavassa esimerkissä:
 
-- Esimerkki: `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)`
+```markdown
+[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+```
 
 ### <a name="links-to-apis"></a>Ohjelmointirajapintoihin viittaavat linkit
 
@@ -111,13 +113,13 @@ Esimerkkejä:
 - System.Exception.\#ctor muuttuu muotoon `System.Exception.%23ctor`
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) muuttuu muotoon `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
 
-Voit hakea tyyppien, jäsenen ylikuormitusluettelon tai tietyn ylikuormitetun jäsenen UID:t osoitteesta `https://xref.docs.microsoft.com/autocomplete`. Kyselymerkkijono "?text=*\<tyypin-tai-jäsenen-nimi>*" määrittää tyypin tai jäsenen, jonka UID:t haluat hakea. Esimerkiksi `https://xref.docs.microsoft.com/autocomplete?text=string.format` hakee [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format)-ylikuormitukset. Työkalu hakee annettua `text`-kyselyparametria mistä tahansa UID:n osasta. Voit esimerkiksi hakea jäsenen nimellä (ToString), puutteellisella jäsenen nimellä (ToStri), tyypin ja jäsenen nimellä (Double.ToString) jne.
+Voit hakea tyyppien, jäsenen ylikuormitusluettelon tai tietyn ylikuormitetun jäsenen UID:t osoitteesta `https://xref.docs.microsoft.com/autocomplete`. Kyselymerkkijono `?text=*\<type-member-name>*` määrittää tyypin tai jäsenen, jonka UID:t haluat hakea. Esimerkiksi `https://xref.docs.microsoft.com/autocomplete?text=string.format` hakee [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format)-ylikuormitukset. Työkalu hakee annettua `text`-kyselyparametria mistä tahansa UID:n osasta. Voit esimerkiksi hakea jäsenen nimellä (ToString), puutteellisella jäsenen nimellä (ToStri), tyypin ja jäsenen nimellä (Double.ToString) jne.
 
-Jos lisäät \*-merkin (tai %2A) UID:n perään, linkki edustaa ylikuormitussivua tietyn ohjelmointirajapinnan sijaan. Voit käyttää merkkiä esimerkiksi silloin, jos haluat linkittää [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch)-sivulle yleisellä tasolla tietyn ylikuormituksen (esim. [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_)) sijasta. Voit käyttää \*-merkkiä myös linkittäessäsi jäsenen sivulle silloin, kun jäsentä ei ole ylikuormitettu. Tällöin sinun ei tarvitse lisätä parametriluetteloa UID:hen.
+Jos lisäät merkin \* (tai merkin `%2A`) UID:n perään, linkki edustaa ylikuormitussivua tietyn ohjelmointirajapinnan sijaan. Voit käyttää merkkiä esimerkiksi silloin, jos haluat linkittää [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch)-sivulle yleisellä tasolla tietyn ylikuormituksen (esim. [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_)) sijasta. Voit käyttää \*-merkkiä myös linkittäessäsi jäsenen sivulle silloin, kun jäsentä ei ole ylikuormitettu. Tällöin sinun ei tarvitse lisätä parametriluetteloa UID:hen.
 
 Jos haluat linkittää tietyn menetelmän ylikuormitukseen, sinun on annettava menetelmän jokaisen parametrin kelvollinen tyypin nimi. Esimerkiksi \<xref:System.DateTime.ToString> linkittyy menetelmään [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString), jolla ei ole parametrejä, kun taas \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> linkittyy [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_)-menetelmään.
 
-Jos haluat linkittää yleiseen tyyppiin, kuten [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), käytä \`-merkkiä (%60) ja kirjoita sen perään yleisen tyypin parametrien lukumäärä. Esimerkiksi \<xref:System.Nullable%601> linkittää tyyppiin [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1), kun taas \<xref:System.Func%602> linkittää valtuutettuun viittaukseen [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2).
+Jos haluat linkittää yleiseen tyyppiin, kuten [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), käytä merkkiä \` (`%60`) ja kirjoita sen perään yleisen tyypin parametrien lukumäärä. Esimerkiksi `<xref:System.Nullable%601>` linkittää tyyppiin [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1), kun taas `<xref:System.Func%602>` linkittää valtuutettuun viittaukseen [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2).
 
 ## <a name="code"></a>Koodi
 
